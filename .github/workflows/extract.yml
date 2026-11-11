@@ -1,0 +1,31 @@
+name: Extract sources
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unzip sources and clean up
+        run: |
+          unzip -o aiclip-github-build.zip
+          cp -a aiclip-github-build/. .
+          rm -rf aiclip-github-build aiclip-github-build.zip
+          rm -f .github/workflows/extract.yml
+          echo "--- root ---"
+          ls -la
+          echo "--- workflows ---"
+          ls -la .github/workflows/
+      - name: Commit extracted files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git status --short
+          git commit -m "Add AIClip sources from aiclip-github-build.zip"
+          git push

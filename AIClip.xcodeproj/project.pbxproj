@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E46BF17428D1B3F197287D2D /* AIEditApplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3869127660887D9AE9584A /* AIEditApplier.swift */; };
+		3839657E7CC86B5F9543C135 /* AIEditClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4476BB25C5F9409E10A1FE /* AIEditClient.swift */; };
+		71DBC2676C30057931583D81 /* AIEditCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BEB7241C6D681ABE5B14FA /* AIEditCommands.swift */; };
+		0E71DCB827E7671D0550DB32 /* AISettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7774F6CA164C9EA00F00059 /* AISettings.swift */; };
+		0EBEA19F64B98384DE809805 /* DemoCommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA33944C2607B1323F356D7 /* DemoCommandParser.swift */; };
+		D860586DF80432E8677AE03E /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807203F33D995B7ED15EE28F /* KeychainStore.swift */; };
+		AA3F2A36F589B4EEE333B4C9 /* AIClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC2BB5AAECC460FE31E1A5D /* AIClipApp.swift */; };
+		B002356BC47E4B23C1389DFE /* CompositionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A235AB32331D46826F729FDB /* CompositionBuilder.swift */; };
+		2CB828D4307F36734888EBD2 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF4BAF447136EB22521B516 /* PlayerController.swift */; };
+		F1B274A665C54DF9AF4578F0 /* VideoCompositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5409153D85E7EB45D78EE6 /* VideoCompositor.swift */; };
+		C432A750782E18F3EDC883F0 /* VideoExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E295FA0066FF74E7D3A0E2B /* VideoExporter.swift */; };
+		6358F966DBCD090AE2853E6B /* ColorFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EFF15B28F3A3B4316E3B65 /* ColorFilters.swift */; };
+		75735E03F45052E240FABA42 /* EditModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BA055E91CF1A33C25BF481 /* EditModels.swift */; };
+		1FA28ECAF2BE497CA481C922 /* EditorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE0DB1874BE0300B5316882 /* EditorStore.swift */; };
+		89BC07C5BDD72A3C89636D71 /* AIEditPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0F7D77B89DBDCA552BCEFE /* AIEditPanel.swift */; };
+		93D9F9DF9360CEB121253FDC /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F316660AE88F58576653B8 /* EditorView.swift */; };
+		7DC257CF039FC4F23AC5B0C9 /* EffectsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE9C0FD5E82BFD62EAC0E0 /* EffectsPanel.swift */; };
+		60A002F813032A763C107F25 /* PlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C4ABB513F85BEDA3B43DC2 /* PlayerContainerView.swift */; };
+		1FC09E55FBA9BAE6BD95E14C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877B4A87E11A668AABA4FB21 /* SettingsView.swift */; };
+		02C90E57A979438AE06D0459 /* TextOverlaySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FAB70388735F5514F3B25C /* TextOverlaySheet.swift */; };
+		5AA1A378F963AF773B9D9071 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D92DFD9648286CEC12FB4D /* Theme.swift */; };
+		B930308B96B499A7D9CF3F05 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3379B1C3A83E2738E9860B9 /* TimelineView.swift */; };
+		831C314B7F4403470B3D0CFE /* VideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B745BDEF19DF20EC3285FAD /* VideoPicker.swift */; };
+		FE57DFA0A23CE5601562584E /* EditorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2611B93A358303A4E28188CE /* EditorError.swift */; };
+		83D53FD05A0A19139E1B9E73 /* MediaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FA40ED943DFF7D235B8EEA /* MediaStore.swift */; };
+		479F4DB7E6B950207FDF8263 /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F339A33E3F45863C0A92658 /* TimeFormatting.swift */; };
+		9DF323510C3B965637DFD566 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC63D0059C87654CB263292 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A3869127660887D9AE9584A /* AIEditApplier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEditApplier.swift; sourceTree = "<group>"; };
+		7C4476BB25C5F9409E10A1FE /* AIEditClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEditClient.swift; sourceTree = "<group>"; };
+		48BEB7241C6D681ABE5B14FA /* AIEditCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEditCommands.swift; sourceTree = "<group>"; };
+		F7774F6CA164C9EA00F00059 /* AISettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISettings.swift; sourceTree = "<group>"; };
+		BBA33944C2607B1323F356D7 /* DemoCommandParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCommandParser.swift; sourceTree = "<group>"; };
+		807203F33D995B7ED15EE28F /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		5EC2BB5AAECC460FE31E1A5D /* AIClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIClipApp.swift; sourceTree = "<group>"; };
+		A235AB32331D46826F729FDB /* CompositionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionBuilder.swift; sourceTree = "<group>"; };
+		DAF4BAF447136EB22521B516 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		6B5409153D85E7EB45D78EE6 /* VideoCompositor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCompositor.swift; sourceTree = "<group>"; };
+		9E295FA0066FF74E7D3A0E2B /* VideoExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoExporter.swift; sourceTree = "<group>"; };
+		E0EFF15B28F3A3B4316E3B65 /* ColorFilters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFilters.swift; sourceTree = "<group>"; };
+		76BA055E91CF1A33C25BF481 /* EditModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditModels.swift; sourceTree = "<group>"; };
+		1FE0DB1874BE0300B5316882 /* EditorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorStore.swift; sourceTree = "<group>"; };
+		AF0F7D77B89DBDCA552BCEFE /* AIEditPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIEditPanel.swift; sourceTree = "<group>"; };
+		40F316660AE88F58576653B8 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
+		94BE9C0FD5E82BFD62EAC0E0 /* EffectsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsPanel.swift; sourceTree = "<group>"; };
+		22C4ABB513F85BEDA3B43DC2 /* PlayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContainerView.swift; sourceTree = "<group>"; };
+		877B4A87E11A668AABA4FB21 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		01FAB70388735F5514F3B25C /* TextOverlaySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOverlaySheet.swift; sourceTree = "<group>"; };
+		C2D92DFD9648286CEC12FB4D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A3379B1C3A83E2738E9860B9 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		5B745BDEF19DF20EC3285FAD /* VideoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPicker.swift; sourceTree = "<group>"; };
+		2611B93A358303A4E28188CE /* EditorError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorError.swift; sourceTree = "<group>"; };
+		37FA40ED943DFF7D235B8EEA /* MediaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaStore.swift; sourceTree = "<group>"; };
+		1F339A33E3F45863C0A92658 /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		1BC63D0059C87654CB263292 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		305687C759A62C4AF6AFD3BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F434D4E4866B6C4D1CD83EAC /* AIClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIClip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52A5BC2AD262D8DD9E95F8A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BBC69DB4EEF41BF625A7C5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76BA055E91CF1A33C25BF481 /* EditModels.swift */,
+				1FE0DB1874BE0300B5316882 /* EditorStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA57CC5C1EF551B6EA46F654 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				A235AB32331D46826F729FDB /* CompositionBuilder.swift */,
+				DAF4BAF447136EB22521B516 /* PlayerController.swift */,
+				6B5409153D85E7EB45D78EE6 /* VideoCompositor.swift */,
+				9E295FA0066FF74E7D3A0E2B /* VideoExporter.swift */,
+			);
+			path = Editor;
+			sourceTree = "<group>";
+		};
+		6B07F10B470D55C7B6A91C8E /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				E0EFF15B28F3A3B4316E3B65 /* ColorFilters.swift */,
+			);
+			path = Effects;
+			sourceTree = "<group>";
+		};
+		D0C4AAFF8AA3A29B0F85B196 /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				0A3869127660887D9AE9584A /* AIEditApplier.swift */,
+				7C4476BB25C5F9409E10A1FE /* AIEditClient.swift */,
+				48BEB7241C6D681ABE5B14FA /* AIEditCommands.swift */,
+				F7774F6CA164C9EA00F00059 /* AISettings.swift */,
+				BBA33944C2607B1323F356D7 /* DemoCommandParser.swift */,
+				807203F33D995B7ED15EE28F /* KeychainStore.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		B64624159DA7B8ED4AF9F856 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AF0F7D77B89DBDCA552BCEFE /* AIEditPanel.swift */,
+				40F316660AE88F58576653B8 /* EditorView.swift */,
+				94BE9C0FD5E82BFD62EAC0E0 /* EffectsPanel.swift */,
+				22C4ABB513F85BEDA3B43DC2 /* PlayerContainerView.swift */,
+				877B4A87E11A668AABA4FB21 /* SettingsView.swift */,
+				01FAB70388735F5514F3B25C /* TextOverlaySheet.swift */,
+				C2D92DFD9648286CEC12FB4D /* Theme.swift */,
+				A3379B1C3A83E2738E9860B9 /* TimelineView.swift */,
+				5B745BDEF19DF20EC3285FAD /* VideoPicker.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F80D22CF1A6B6754D28DA2AD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2611B93A358303A4E28188CE /* EditorError.swift */,
+				37FA40ED943DFF7D235B8EEA /* MediaStore.swift */,
+				1F339A33E3F45863C0A92658 /* TimeFormatting.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		80398A32DC613993720C15C7 /* AIClip */ = {
+			isa = PBXGroup;
+			children = (
+				0BBC69DB4EEF41BF625A7C5B /* Models */,
+				DA57CC5C1EF551B6EA46F654 /* Editor */,
+				6B07F10B470D55C7B6A91C8E /* Effects */,
+				D0C4AAFF8AA3A29B0F85B196 /* AI */,
+				B64624159DA7B8ED4AF9F856 /* UI */,
+				F80D22CF1A6B6754D28DA2AD /* Utilities */,
+				5EC2BB5AAECC460FE31E1A5D /* AIClipApp.swift */,
+				1BC63D0059C87654CB263292 /* Assets.xcassets */,
+				305687C759A62C4AF6AFD3BE /* Info.plist */,
+			);
+			path = AIClip;
+			sourceTree = "<group>";
+		};
+		54689237503EF14D5935E537 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F434D4E4866B6C4D1CD83EAC /* AIClip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17A83B051323C439848D500A = {
+			isa = PBXGroup;
+			children = (
+				80398A32DC613993720C15C7 /* AIClip */,
+				54689237503EF14D5935E537 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34A04005BCAF206EEC990BD9 /* AIClip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E189CA5BABCE7D0B45454D9E /* Build configuration list for PBXNativeTarget "AIClip" */;
+			buildPhases = (
+				AA14F5B9672893C01658B187 /* Sources */,
+				52A5BC2AD262D8DD9E95F8A8 /* Frameworks */,
+				C37F856663828F417F0A20CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIClip;
+			productName = AIClip;
+			productReference = F434D4E4866B6C4D1CD83EAC /* AIClip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		244210E48437B6556980A702 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					34A04005BCAF206EEC990BD9 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = F4AD726CA9D6ED407EFD03B1 /* Build configuration list for PBXProject "AIClip" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 17A83B051323C439848D500A;
+			productRefGroup = 54689237503EF14D5935E537 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34A04005BCAF206EEC990BD9 /* AIClip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C37F856663828F417F0A20CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF323510C3B965637DFD566 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA14F5B9672893C01658B187 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46BF17428D1B3F197287D2D /* AIEditApplier.swift in Sources */,
+				3839657E7CC86B5F9543C135 /* AIEditClient.swift in Sources */,
+				71DBC2676C30057931583D81 /* AIEditCommands.swift in Sources */,
+				0E71DCB827E7671D0550DB32 /* AISettings.swift in Sources */,
+				0EBEA19F64B98384DE809805 /* DemoCommandParser.swift in Sources */,
+				D860586DF80432E8677AE03E /* KeychainStore.swift in Sources */,
+				AA3F2A36F589B4EEE333B4C9 /* AIClipApp.swift in Sources */,
+				B002356BC47E4B23C1389DFE /* CompositionBuilder.swift in Sources */,
+				2CB828D4307F36734888EBD2 /* PlayerController.swift in Sources */,
+				F1B274A665C54DF9AF4578F0 /* VideoCompositor.swift in Sources */,
+				C432A750782E18F3EDC883F0 /* VideoExporter.swift in Sources */,
+				6358F966DBCD090AE2853E6B /* ColorFilters.swift in Sources */,
+				75735E03F45052E240FABA42 /* EditModels.swift in Sources */,
+				1FA28ECAF2BE497CA481C922 /* EditorStore.swift in Sources */,
+				89BC07C5BDD72A3C89636D71 /* AIEditPanel.swift in Sources */,
+				93D9F9DF9360CEB121253FDC /* EditorView.swift in Sources */,
+				7DC257CF039FC4F23AC5B0C9 /* EffectsPanel.swift in Sources */,
+				60A002F813032A763C107F25 /* PlayerContainerView.swift in Sources */,
+				1FC09E55FBA9BAE6BD95E14C /* SettingsView.swift in Sources */,
+				02C90E57A979438AE06D0459 /* TextOverlaySheet.swift in Sources */,
+				5AA1A378F963AF773B9D9071 /* Theme.swift in Sources */,
+				B930308B96B499A7D9CF3F05 /* TimelineView.swift in Sources */,
+				831C314B7F4403470B3D0CFE /* VideoPicker.swift in Sources */,
+				FE57DFA0A23CE5601562584E /* EditorError.swift in Sources */,
+				83D53FD05A0A19139E1B9E73 /* MediaStore.swift in Sources */,
+				479F4DB7E6B950207FDF8263 /* TimeFormatting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		82BF50450FC0DBAC300D1F4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C3731BB44C0F51834ED8F4A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FC55815DD81B35ACC52F157 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AIClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "智能剪辑";
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "智能剪辑需要将导出的视频保存到你的相册。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "智能剪辑需要访问相册，以便导入视频进行剪辑。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanz.aiclip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BDE9C39141E1AB403C338EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AIClip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "智能剪辑";
+				INFOPLIST_KEY_LSRequiresIPhoneOS = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "智能剪辑需要将导出的视频保存到你的相册。";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "智能剪辑需要访问相册，以便导入视频进行剪辑。";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yanz.aiclip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4AD726CA9D6ED407EFD03B1 /* Build configuration list for PBXProject "AIClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82BF50450FC0DBAC300D1F4F /* Debug */,
+				C3731BB44C0F51834ED8F4A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E189CA5BABCE7D0B45454D9E /* Build configuration list for PBXNativeTarget "AIClip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FC55815DD81B35ACC52F157 /* Debug */,
+				BDE9C39141E1AB403C338EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 244210E48437B6556980A702 /* Project object */;
+}

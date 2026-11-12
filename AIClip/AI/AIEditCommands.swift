@@ -148,9 +148,10 @@ extension AIEditCommand: Codable {
         case "removeTextOverlays":
             self = .removeTextOverlays
         case "addFade":
-            let styleRaw = (try c.decodeIfPresent(String.self, forKey: .style))
-                ?? (try c.decodeIfPresent(String.self, forKey: .type))
-                ?? "in"
+    let styleRaw = try c.decodeIfPresent(String.self, forKey: .style)
+                ?? c.decodeIfPresent(String.self, forKey: .type)
+            ?? "in"
+            
             self = .addFade(
                 style: FadeStyle(parsing: styleRaw),
                 startSeconds: try c.decodeIfPresent(Double.self, forKey: .startSeconds),
